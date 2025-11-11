@@ -1,0 +1,116 @@
+
+            body {
+                background-color: #f8f8f8;
+                font-family: 'fuenteplay', sans-serif;
+                padding: 20px;
+}
+        
+        @font-face {
+            font-family: 'fuentegravi';
+            src: url('Fuentes/Gravitas_One/GravitasOne-Regular.ttf') format('truetype');
+        }
+         @font-face {
+            font-family: 'fuentedanc';
+            src: url('Fuentes/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+        }
+        .contenedor{
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            width: 550px ;
+            max-width: 550px;
+            flex-wrap: wrap;
+        }
+        .colores{
+            display: flex;
+            margin: 5px;
+            flex-direction:column;
+            align-items: center;
+            width: 100px;
+            height: 140px;
+        }
+        .cuadro{
+            height: 80px;
+            width: 80px;
+            border-radius: 8px;
+            box-shadow: 0 6px 7px rgba(0,0,0,0.1);
+        }
+        h5{
+            margin-top: 8px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        .font-buttom{
+                    display: flex;
+                    margin: 0 auto;
+                    align-items: center;
+                    padding: 10px;
+                    background-color:#BCAEB2 ;
+                    border-radius: 3%;
+
+        }
+        .font{
+            margin-left: 60px;
+        }
+        .botones{
+            margin-left: 20px; 
+            margin: 0 auto;
+
+        }
+        .boton{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin: 20px;
+            align-items: center;
+            width: 170px;
+            height: 50px;
+            border-radius: 14px;
+            background: linear-gradient(225deg, #c9babe, #a99da0);
+            box-shadow:  -10px 10px 16px #988d90,
+             10px -10px 16px #e0cfd4;
+             margin-bottom: 10px;
+        }
+        .boton:hover {
+            box-shadow: -6px 6px 10px #988d90,
+                6px -6px 10px #e0cfd4;
+            transform: scale(1.03); 
+}
+
+.boton:active {
+    box-shadow: inset -4px 4px 10px #988d90,
+                inset 4px -4px 10px #e0cfd4;
+    transform: scale(0.97); 
+}
+
+.boton2{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin: 20px;
+            align-items: center;
+            width: 170px;
+            height: 50px;
+            border-radius: 10px;
+            background: linear-gradient(225deg, #a99da0, #c9babe);
+            box-shadow:  -7px 7px 14px #534d4e,
+             7px -7px 14px #ffffff;
+        }
+        
+
+.boton2:active {
+    box-shadow: inset -6px 6px 12px #988d90,
+                inset 6px -6px 12px #e0cfd4;
+    transform: scale(0.97); 
+}
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+}
+img{
+    width: 30%;
+}

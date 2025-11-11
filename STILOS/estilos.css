@@ -1,0 +1,586 @@
+/*GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: fuentegravi, sans-serif;
+  background-color: #fffaf7;
+  color: #CE7601;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'fuentegravi';
+  src: url('../FONTS/Gravitas_One/GravitasOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'fuentedanc';
+  src: url('../FONTS/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
+/* PAGINA PRINCIPAL ---------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #FFE6DC;
+  padding: 20px 90px;
+  height: 200px;
+  border-bottom: 4px solid #CE7601 ;
+}
+
+.logo {
+  width: 260px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.botonmenu a {
+  text-decoration: none;
+  color: #CE7601;
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.btnEnviar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section {
+  position: relative;
+  height: 90vh;
+  background: url('../IMAGENES/reposteria2.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.division {
+  height: 4px;
+  background-color: #CE7601;
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 2px;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 40px;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .botonmenu {
+    width: 180px;
+    height: 90px;
+  }
+
+
+
+  section {
+    height: 60vh;
+  }
+}
+.btnEnviar {
+  display: block;
+  margin: 30px auto 10px;
+  background-color: #CE7601;
+  color: white;
+  font-family: fuentegravi;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 30px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px #b15f00, -4px -4px 10px #ffc791;
+  transition: all 0.3s ease;
+}
+
+.btnEnviar:hover {
+  background-color: #e58e26;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #e5a157;
+}
+
+.btnEnviar:active {
+  transform: scale(0.97);
+}
+
+.sepaPaste {
+  width: 100%;
+  display: block;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* --- ------------------------------- ZONA CARTA ------------------------------------------ */
+
+.carta {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 30px;
+  background-color: #fff7f3;
+  font-family: "Poppins", sans-serif;
+  color: #5f3a2b;
+}
+
+.carta aside {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #ffe6dc;
+  border-radius: 20px;
+  box-shadow: -5px 5px 12px rgba(0,0,0,0.15);
+  padding: 30px 20px;
+  text-align: center;
+  height: fit-content;
+  top: 120px;
+  margin-bottom: 50px;
+}
+
+.carta aside h1 {
+  font-size: 2rem;
+  font-family: 'fuentegravi', cursive;
+  margin-bottom: 10px;
+}
+
+.carta aside h3 {
+  margin: 15px 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-family: fuentedanc;
+  font-size: x-large;
+}
+
+.carta aside h3:hover {
+  color: #d95d39;
+  transform: scale(1.05);
+}
+
+.carta main {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 40px;
+}
+
+.titulopast {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #b34b27;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+}
+
+.tarj-prod {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.infoto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff5ee;
+  margin: 0px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 0px;
+  transition: all 0.3s ease;
+}
+
+.infoto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.infopro {
+  width: 60%;
+}
+
+.infopro h4 {
+  color: #b34b27;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.infopro hr {
+  border: none;
+  height: 2px;
+  background-color: #d1bfc4;
+  margin: 10px 0;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #5a3c2b;
+}
+
+.foto {
+  width: 35%;
+  text-align: right;
+}
+
+.foto-comida {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btnEnviar {
+  display: block;
+  background-color: #ffb6a3;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  margin: 30px auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btnEnviar:hover {
+  background-color: #d95d39;
+  transform: scale(1.05);
+}
+
+.btnEnviar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* === NUEVO CARRUSEL DE PASTELERÍA === */
+.contenedor-pasteleria {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.infoto {
+  flex: 0 0 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #fff5ee;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 40px;
+  gap: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  margin-left: 20px;
+}
+
+.infopro {
+  width: 60%;
+  color: #5a3c2b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  overflow-y: auto;
+  margin-left: 40px;
+}
+
+.foto {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-comida {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffb6a3;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: #d95d39;
+  transform: scale(1.1) translateY(-50%);
+}
+
+.carousel-btn.prev {
+  left:1px;  
+}
+
+.carousel-btn.next {
+  right: 1px; 
+}
+
+@media (max-width: 900px) {
+  .infoto {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .infopro, .foto {
+    width: 100%;
+  }
+
+  .foto-comida {
+    max-width: 250px;
+    margin-top: 20px;
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  .carousel-btn.next {
+    right: 10px;
+  }
+}
+
+
+/*PAGINA ENCARGOSSS----------------------------------------------------------*/
+.formulario {
+  margin: 50px auto;
+  width: 600px;
+  background-color: #FFE6DC;
+  border-radius: 25px;
+  box-shadow: -6px 6px 10px #d1bfc4, 6px -6px 10px #fae0e8;
+  padding: 30px 50px;
+  animation: aparecer 1s ease;
+}
+
+.tituloform {
+  text-align: center;
+  color: #CE7601;
+  font-family: fuentegravi;
+  margin-bottom: 20px;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.infoperso {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.infoperso label {
+  font-family: fuentedanc;
+  color: #5f3a2b;
+  font-size: 1.1rem;
+}
+
+.infoperso input {
+  width: 220px;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border-radius: 10px;
+  border: 1px solid #e2c3b7;
+  background-color: #fffdfb;
+  transition: all 0.3s ease;
+}
+
+.infoperso input:focus {
+  outline: none;
+  border-color: #CE7601;
+  box-shadow: 0 0 8px #e2a26d;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.producto label {
+  font-family: fuentedanc;
+  font-size: 1.1rem;
+  color: #5f3a2b;
+}
+
+.producto select, 
+.producto input[type="number"] {
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #e2c3b7;
+  background-color: #fffdfb;
+  transition: all 0.3s ease;
+}
+
+.producto select:hover,
+.producto input:hover {
+  transform: scale(1.02);
+  border-color: #CE7601;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #e2c3b7;
+  background-color: #fffdfb;
+  font-family: fuentedanc;
+  font-size: 1rem;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #CE7601;
+  box-shadow: 0 0 8px #e2a26d;
+}
+
+
+/*PAGINA CONTACTOS------------------------------------------------------------------------------*/
+.contacto-fondo {
+  background: url('../IMAGENES/reposteria2.jpg') center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.tarjeta-contacto {
+  background-color: rgba(255, 230, 220, 0.95);
+  border-radius: 20px;
+  padding: 25px 30px;
+
+  width: 600px;
+  text-align: center;
+  box-shadow: 8px 8px 18px #c9a9a1, -8px -8px 18px #fff3ec;
+  animation: aparecer 1s ease;
+}
+
+.tarjeta-contacto h2 {
+  font-family: fuentegravi;
+  color: #CE7601;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.tarjeta-contacto .ciudad {
+  font-family: fuentedanc;
+  color: #5f3a2b;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.tarjeta-contacto .web {
+  color: #CE7601;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.mapa iframe {
+  border-radius: 15px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #FFE6DC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-top: 2px solid #CE7601;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 250px;
+}
+
+.footer-info {
+  text-align: center;
+  color: #5f3a2b;
+  font-family: fuentedanc;
+  line-height: 1.5;
+}
+
+.footer-btn .btnEncargos {
+  background-color: #CE7601;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-family: fuentegravi;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+.footer-btn .btnEncargos:hover {
+  background-color: #e58e26;
+  transform: scale(1.05);
+}
+.tel-direc{
+  font-size: xx-large;
+}
+
+
+

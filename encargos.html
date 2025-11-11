@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encargos</title>
+  <link rel="stylesheet" href="STILOS/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="botonmenu"><a href="pasteleria.html">CARTA</a></div>
+    <a href="principal.html"><img src="IMAGENES/logodef.png" alt="Logo Tarta a la Carta" class="logo"></a>
+    <div class="botonmenu"><a href="contacto.html">CONTACTO</a></div>
+  </header>
+
+  <section>
+    <div class="formulario">
+      <h2 class="tituloform">⭐ REALICE SU ENCARGO ⭐</h2>
+
+      <form class="formEncargo">
+        <div class="infoperso">
+          <div class="nombDirec">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <br>
+            <label for="direccion">Dirección</label><br>
+            <input type="text" id="direccion" placeholder="Calle, número, ciudad" required>
+          </div>
+
+          <div class="telfCpost">
+            <label for="telf">Teléfono</label><br>
+            <input type="tel" id="telf" placeholder="Ej: 600123456" required>
+            <br>
+            <label for="codPostal">Código Postal</label><br>
+            <input type="text" id="codPostal" placeholder="Ej: 28080" required>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="productos">
+          <div class="producto">
+            <label for="pasteles">Pastelería</label>
+            <select id="pasteles" name="pasteles">
+              <option value="">Seleccione una opción</option>
+              <optgroup label="Tartas Clásicas">
+                <option>Cheesecake de Pistacho</option>
+                <option>Cheesecake</option>
+                <option>Red Velvet</option>
+                <option>San Marcos</option>
+              </optgroup>
+              <optgroup label="Tartas Especiales">
+                <option>Tarta de Nata Portuguesa</option>
+                <option>Tarta de Fresa</option>
+                <option>Tarta de Oreo</option>
+                <option>Tarta Tres Chocolates</option>
+              </optgroup>
+            </select>
+            <label for="cantpastel">Cantidad</label>
+            <input type="number" id="cantpastel" min="0" max="10">
+          </div>
+
+          <div class="producto">
+            <label for="bolleria">Bollería</label>
+            <select id="bolleria" name="bolleria">
+              <option value="">Seleccione una opción</option>
+              <optgroup label="Delicias Dulces">
+                <option>Bollo de Chocolate</option>
+                <option>Bollo de Aceite</option>
+                <option>Cupcakes</option>
+                <option>Ensaimada</option>
+              </optgroup>
+              <optgroup label="Repostería Artesanal">
+                <option>Croissant</option>
+                <option>Coca Mayorquina</option>
+                <option>Torta de Aceite</option>
+              </optgroup>
+            </select>
+            <label for="cantbollo">Cantidad</label>
+            <input type="number" id="cantbollo" min="0" max="10">
+          </div>
+
+          <div class="producto">
+            <label for="empanadas">Empanadas</label>
+            <select id="empanadas" name="empanadas">
+              <option value="">Seleccione una opción</option>
+              <optgroup label="Sabores Caseros">
+                <option>Cuatro Quesos</option>
+                <option>Atún</option>
+                <option>Cerdo</option>
+                <option>Champiñones</option>
+              </optgroup>
+            </select>
+            <label for="cantempa">Cantidad</label>
+            <input type="number" id="cantempa" min="0" max="10">
+          </div>
+        </div>
+
+        <textarea placeholder="Escriba aquí detalles adicionales de su pedido..." rows="4" required></textarea>
+
+        <button type="submit" class="btnEnviar">Enviar Encargo</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
